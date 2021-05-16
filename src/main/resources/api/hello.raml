@@ -1,0 +1,19 @@
+#%RAML 1.0
+title: Hello
+
+/hello:
+  get:
+    headers:
+      client_id:
+        type: string
+      client_secret:
+        type: string
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "Message": "This is the sample response for hello endpoint"
+              }
+              
